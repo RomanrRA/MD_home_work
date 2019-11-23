@@ -55,11 +55,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (bigMainText.getVisibility() == View.VISIBLE) {
-                    bigMainText.setVisibility(View.GONE);
-                } else {
-                    bigMainText.setVisibility(View.VISIBLE);
-                }
+                bigMainText.setVisibility(bigMainText.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
                 Snackbar.make(view, "Hi to all! This is MD HOME_WORK!!!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
