@@ -14,4 +14,14 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="text_for_fab_text_view">Push the fab button</string>
+    <string name="name">Name</string>
+    <string name="push_me">Push me</string>
+    <string name="spravka">Справка</string>
+    <string name="this_is_spravka">Это справка</string>
+    <string name="enter_name">Введите имя: </string>
+    <string name="button_label_enabled">button enabled</string>
+    <string name="text_button_label_enabled">text button enabled</string>
+    <string name="text_button_label_disabled">text button disabled</string>
+    <string name="button_label_disabled">button disabled</string>
+    <string name="unelevated_button_label_enabled">unelevated button enabled</string>
 </resources>
