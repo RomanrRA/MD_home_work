@@ -1,4 +1,4 @@
-package com.example.md1l1homework.homeWork1.ui.gallery;
+package com.example.md1l1homework.homeWork4.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.md1l1homework.R;
 
-public class GalleryFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.hw1_fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(this, new Observer<Integer>() {
+        homeViewModel =
+                ViewModelProviders.of(this).get(HomeViewModel.class);
+        View root = inflater.inflate(R.layout.hw4_fragment_home, container, false);
+        final TextView textView = root.findViewById(R.id.text_home);
+        homeViewModel.getText().observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(@Nullable Integer s) {
                 textView.setText(s);

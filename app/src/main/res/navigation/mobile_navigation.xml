@@ -3,41 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_progress_bars">
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.md1l1homework.homeWork1.ui.home.HomeFragment"
+        android:name="com.example.md1l1homework.homeWork4.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/hw1_fragment_home" />
+        tools:layout="@layout/hw4_fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.md1l1homework.homeWork1.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/hw1_fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.md1l1homework.homeWork1.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/hw1_fragment_slideshow" />
+        android:id="@+id/nav_progress_bars"
+        android:name="com.example.md1l1homework.homeWork4.ui.gallery.ProgressBars"
+        android:label="@string/menu_progress_bars"
+        tools:layout="@layout/hw4_fragment_progress_bars" />
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="com.example.md1l1homework.homeWork1.ui.tools.ToolsFragment"
+        android:name="com.example.md1l1homework.homeWork4.ui.tools.ToolsFragment"
         android:label="@string/menu_tools"
-        tools:layout="@layout/hw1_fragment_tools" />
+        tools:layout="@layout/hw4_fragment_tools" />
 
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.md1l1homework.homeWork1.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/hw1_fragment_share" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.md1l1homework.homeWork1.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/hw1_fragment_send" />
 </navigation>

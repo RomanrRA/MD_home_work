@@ -1,4 +1,4 @@
-package com.example.md1l1homework.homeWork1.ui.share;
+package com.example.md1l1homework.homeWork4.ui.gallery;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.md1l1homework.R;
 
-public class ShareFragment extends Fragment {
+public class ProgressBars extends Fragment {
 
-    private ShareViewModel shareViewModel;
+    private GalleryViewModel progressBarsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        shareViewModel =
-                ViewModelProviders.of(this).get(ShareViewModel.class);
-        View root = inflater.inflate(R.layout.hw1_fragment_share, container, false);
-        final TextView textView = root.findViewById(R.id.text_share);
-        shareViewModel.getText().observe(this, new Observer<Integer>() {
+        progressBarsViewModel =
+                ViewModelProviders.of(this).get(GalleryViewModel.class);
+        View root = inflater.inflate(R.layout.hw4_fragment_progress_bars, container, false);
+        final TextView textView = root.findViewById(R.id.text_progress_bars);
+        progressBarsViewModel.getText().observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(@Nullable Integer s) {
                 textView.setText(s);

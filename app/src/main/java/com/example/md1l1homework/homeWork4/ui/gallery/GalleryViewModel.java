@@ -1,4 +1,4 @@
-package com.example.md1l1homework.homeWork1.ui.slideshow;
+package com.example.md1l1homework.homeWork4.ui.gallery;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -6,13 +6,14 @@ import androidx.lifecycle.ViewModel;
 
 import com.example.md1l1homework.R;
 
-public class SlideshowViewModel extends ViewModel {
+
+public class GalleryViewModel extends ViewModel {
 
     private MutableLiveData<Integer> mText;
 
-    public SlideshowViewModel() {
+    public GalleryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue(R.string.text_for_fab_text_view);
+        mText.setValue(R.string.progress_bars_page);
     }
 
     public LiveData<Integer> getText() {

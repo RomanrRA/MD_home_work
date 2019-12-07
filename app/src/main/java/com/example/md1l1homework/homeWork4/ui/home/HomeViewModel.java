@@ -1,4 +1,4 @@
-package com.example.md1l1homework.homeWork1.ui.share;
+package com.example.md1l1homework.homeWork4.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -6,13 +6,13 @@ import androidx.lifecycle.ViewModel;
 
 import com.example.md1l1homework.R;
 
-public class ShareViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<Integer> mText;
 
-    public ShareViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue(R.string.text_for_fab_text_view);
+        mText.setValue(R.string.home_page);
     }
 
     public LiveData<Integer> getText() {

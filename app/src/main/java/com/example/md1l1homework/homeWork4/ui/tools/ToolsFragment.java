@@ -1,4 +1,4 @@
-package com.example.md1l1homework.homeWork1.ui.slideshow;
+package com.example.md1l1homework.homeWork4.ui.tools;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.md1l1homework.R;
 
-public class SlideshowFragment extends Fragment {
+public class ToolsFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private ToolsViewModel toolsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.hw1_fragment_slideshow, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(this, new Observer<Integer>() {
+        toolsViewModel =
+                ViewModelProviders.of(this).get(ToolsViewModel.class);
+        View root = inflater.inflate(R.layout.hw4_fragment_tools, container, false);
+        final TextView textView = root.findViewById(R.id.text_tools);
+        toolsViewModel.getText().observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(@Nullable Integer s) {
                 textView.setText(s);
