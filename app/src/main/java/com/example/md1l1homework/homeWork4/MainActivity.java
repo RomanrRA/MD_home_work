@@ -35,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         setSupportActionBar(toolbar);
         fabBtn();
+
         //ToDo Когда раскоменчиваю эти две строки ниже (или любую из них) все падает с ошибкой:
 //        Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.view.View.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
         // Не пойму почему
+
 //        getVisibleProgressBar(horizontalBarBtn, horizontalBar);
 //        getVisibleProgressBar(roundBarBtn, roundBar);
         setDrawlerLayout();
