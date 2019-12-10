@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_progress_bars"
-        android:name="com.example.md1l1homework.homeWork4.ui.gallery.ProgressBars"
+        android:name="com.example.md1l1homework.homeWork4.ui.progress_bar.ProgressBars"
         android:label="@string/menu_progress_bars"
         tools:layout="@layout/hw4_fragment_progress_bars" />
 

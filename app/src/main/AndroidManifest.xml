@@ -9,9 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name=".homeWork4.MainActivity"
+            android:name=".homeWork5.HW5MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,24 +20,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".homeWork2.MainEditText"
+            android:name=".homeWork4.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity
-            android:name=".homeWork2.MainSnackBar"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".homeWork2.MainBottomSheet">
-
-        </activity>
-        <activity android:name=".homeWork3.DifferentButtons">
-
-        </activity>
-        <activity
-            android:name=".homeWork3.MainToolBar"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
     </application>

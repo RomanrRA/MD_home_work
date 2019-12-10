@@ -1,4 +1,4 @@
-package com.example.md1l1homework.homeWork4.ui.gallery;
+package com.example.md1l1homework.homeWork4.ui.progress_bar;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

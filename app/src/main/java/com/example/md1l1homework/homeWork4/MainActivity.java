@@ -3,8 +3,6 @@ package com.example.md1l1homework.homeWork4;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -19,14 +17,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
-import static com.example.md1l1homework.homeWork2.helpers.Common.getCustomSnackbar;
+import static com.example.md1l1homework.homeWork4.helpers.Common.getCustomSnackbar;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private Toolbar toolbar;
-    private Button horizontalBarBtn, roundBarBtn;
-    private ProgressBar horizontalBar, roundBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +33,6 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         setSupportActionBar(toolbar);
         fabBtn();
-
-        //ToDo Когда раскоменчиваю эти две строки ниже (или любую из них) все падает с ошибкой:
-//        Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.view.View.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
-        // Не пойму почему
-
-//        getVisibleProgressBar(horizontalBarBtn, horizontalBar);
-//        getVisibleProgressBar(roundBarBtn, roundBar);
         setDrawlerLayout();
 
     }
@@ -49,10 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViews() {
         toolbar = findViewById(R.id.toolbar);
-        horizontalBarBtn = findViewById(R.id.progress_bar_horizontal_btn);
-        roundBarBtn = findViewById(R.id.progress_bar_round_btn);
-        horizontalBar = findViewById(R.id.horizontal_progress_bar);
-        roundBar = findViewById(R.id.round_progress_bar);
     }
 
     @Override
@@ -102,20 +89,5 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
-    private void getVisibleProgressBar(Button button, final ProgressBar progressBar) {
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setVisibleHorizontalBar(progressBar);
-            }
-        });
-    }
 
-    private void setVisibleHorizontalBar(ProgressBar progressBar) {
-        progressBar.setVisibility(progressBar.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
-    }
-
-    private void setVisibleRoundBar(View view) {
-        roundBar.setVisibility(roundBar.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
-    }
 }
