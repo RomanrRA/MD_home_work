@@ -9,37 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name=".homeWork4.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".homeWork6.HW6MainActivity"
+            android:label="@string/title_activity_hw6_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".homeWork2.MainEditText"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity
-            android:name=".homeWork2.MainSnackBar"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".homeWork2.MainBottomSheet">
-
-        </activity>
-        <activity android:name=".homeWork3.DifferentButtons">
-
-        </activity>
-        <activity
-            android:name=".homeWork3.MainToolBar"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
         </activity>
     </application>
 
